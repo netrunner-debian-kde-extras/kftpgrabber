@@ -19,6 +19,7 @@ clean::
 	find . -depth -name "*moc*" -exec rm -rf {} \;
 	find . -depth -name cmake_install.cmake -exec rm -f {} \;
 	find . -depth -name CTestTestfile.cmake -exec rm -f {} \;
-	find . -depth -name CMakeFiles -exec rm -f {} \;
+	find . -depth -name CMakeFiles -exec rm -rf {} \;
 	find . -depth -name Makefile -exec rm -f {} \;
-
+	rm -f CMakeCache.txt cmake_uninstall.cmake config-kftpgrabber.h install_manifest.txt
+	rm -rf CMakeTmp
