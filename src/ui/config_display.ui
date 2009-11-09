@@ -1,0 +1,113 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>DisplaySettings</class>
+  <widget class="QWidget" name="DisplaySettings" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>537</width>
+        <height>424</height>
+      </rect>
+    </property>
+    <layout class="QGridLayout" >
+      <property name="margin" >
+        <number>0</number>
+      </property>
+      <property name="spacing" >
+        <number>0</number>
+      </property>
+      <item row="0" column="0" >
+        <widget class="QTabWidget" name="tabWidget6" >
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>Displa&amp;y</string>
+            </attribute>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="Q3GroupBox" name="groupBox32" >
+                  <property name="title" >
+                    <string>File &amp;Browser</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showHiddenFiles" >
+                        <property name="text" >
+                          <string>Show &amp;hidden files and directories</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showTree" >
+                        <property name="text" >
+                          <string>Show &amp;directory tree</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showSizeInBytes" >
+                        <property name="text" >
+                          <string>Show filesi&amp;ze in bytes (toggle for "human readable" format)</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showOwnerGroup" >
+                        <property name="text" >
+                          <string>Show &amp;owner and group for each file</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showDirectorySize" >
+                        <property name="text" >
+                          <string>Show directory &amp;size</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="Q3GroupBox" name="groupBox2" >
+                  <property name="title" >
+                    <string>&amp;Other Interface Elements</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <item>
+                      <widget class="QCheckBox" name="kcfg_showLeftSidebar" >
+                        <property name="text" >
+                          <string>Show left sidebar</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <spacer name="spacer20" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>21</width>
+                      <height>40</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+</ui>

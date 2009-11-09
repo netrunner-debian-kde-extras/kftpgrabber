@@ -1,0 +1,475 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>QuickConnect</class>
+  <widget class="QWidget" name="QuickConnect" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>385</width>
+        <height>356</height>
+      </rect>
+    </property>
+    <property name="sizePolicy" >
+      <sizepolicy>
+        <hsizetype>5</hsizetype>
+        <vsizetype>0</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+      </sizepolicy>
+    </property>
+    <property name="maximumSize" >
+      <size>
+        <width>32767</width>
+        <height>32766</height>
+      </size>
+    </property>
+    <layout class="QGridLayout" >
+      <property name="margin" >
+        <number>0</number>
+      </property>
+      <item row="0" column="0" >
+        <widget class="QTabWidget" name="tabWidget7" >
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>&amp;General</string>
+            </attribute>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="Q3GroupBox" name="groupBox3" >
+                  <property name="sizePolicy" >
+                    <sizepolicy>
+                      <hsizetype>5</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="title" >
+                    <string>Recent connections</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel1_3" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="text" >
+                              <string>Select connection:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KComboBox" name="recentConnections" />
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="clearRecent" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>1</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="text" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="Q3GroupBox" name="groupBox1" >
+                  <property name="sizePolicy" >
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="frameShape" >
+                    <enum>Q3GroupBox::GroupBoxPanel</enum>
+                  </property>
+                  <property name="frameShadow" >
+                    <enum>Q3GroupBox::Sunken</enum>
+                  </property>
+                  <property name="title" >
+                    <string>Quick Connect</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel1" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>80</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>URL:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KLineEdit" name="urlBox" >
+                            <property name="toolTip" stdset="0" >
+                              <string>Enter the whole url into this box</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel2" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>80</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>Host:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KLineEdit" name="hostBox" >
+                            <property name="toolTip" stdset="0" >
+                              <string>Enter ftp's hostname</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLabel" name="textLabel5" >
+                            <property name="text" >
+                              <string>Port:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QSpinBox" name="portBox" >
+                            <property name="maximum" >
+                              <number>65535</number>
+                            </property>
+                            <property name="value" >
+                              <number>21</number>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel4_2" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>80</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>Protocol:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KComboBox" name="protocolBox" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <item>
+                              <property name="text" >
+                                <string>FTP</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text" >
+                                <string>FTP over TLS/SSL (explicit)</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text" >
+                                <string>FTP over TLS/SSL (implicit)</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text" >
+                                <string>SFTP over SSH2</string>
+                              </property>
+                            </item>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="protoAdvanced" >
+                            <property name="text" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="anonLogin" >
+                        <property name="text" >
+                          <string>Anon&amp;ymous login</string>
+                        </property>
+                        <property name="toolTip" stdset="0" >
+                          <string>Check for anonymous login</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel3" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>80</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>Username:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KLineEdit" name="usernameBox" >
+                            <property name="toolTip" stdset="0" >
+                              <string>Enter account username</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel4" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>80</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>Password:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KLineEdit" name="passwordBox" >
+                            <property name="passwordMode">
+                              <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string>Enter account password</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="addBookmark" >
+                        <property name="text" >
+                          <string>Add to &amp;bookmarks</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <spacer name="spacer11" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>20</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>Advanced</string>
+            </attribute>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="Q3GroupBox" name="groupBox14" >
+                  <property name="title" >
+                    <string>Server Encoding</string>
+                  </property>
+                  <layout class="QGridLayout" >
+                    <item row="0" column="0" >
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="textLabel1_2" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>1</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="text" >
+                              <string>Encoding:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KComboBox" name="serverEncoding" />
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <spacer name="spacer7" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>21</width>
+                      <height>421</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+  <customwidgets>
+    <customwidget>
+      <class>KComboBox</class>
+      <extends>QComboBox</extends>
+    </customwidget>
+  </customwidgets>
+  <tabstops>
+    <tabstop>tabWidget7</tabstop>
+    <tabstop>urlBox</tabstop>
+    <tabstop>hostBox</tabstop>
+    <tabstop>portBox</tabstop>
+    <tabstop>protocolBox</tabstop>
+    <tabstop>protoAdvanced</tabstop>
+    <tabstop>anonLogin</tabstop>
+    <tabstop>usernameBox</tabstop>
+    <tabstop>passwordBox</tabstop>
+    <tabstop>addBookmark</tabstop>
+    <tabstop>serverEncoding</tabstop>
+  </tabstops>
+  <includes>
+    <include location="local" >kcombobox.h</include>
+    <include location="local" >kpushbutton.h</include>
+    <include location="local" >kcombobox.h</include>
+    <include location="local" >kpushbutton.h</include>
+    <include location="local" >klineedit.h</include>
+    <include location="local" >kcombobox.h</include>
+  </includes>
+</ui>

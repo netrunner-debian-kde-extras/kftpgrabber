@@ -1,0 +1,7 @@
+File=kftpgrabber.kcfg
+ClassName=Config
+Inherits=ConfigBase
+NameSpace=KFTPCore
+Singleton=true
+Mutators=true
+IncludeFiles=configbase.h

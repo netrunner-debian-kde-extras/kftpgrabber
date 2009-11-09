@@ -1,0 +1,89 @@
+ KFTPGrabber README
+--------------------
+
+ INTRODUCTION
+==============
+
+KFTPGrabber - A graphical FTP client for KDE
+
+There are many FTP clients around these days. Most are console based, some
+feature a graphical user interface. What most clients are missing is support 
+for latest or not so common technologies like ZeroConf, TLS/SSL or FXP (just
+to name a few), accompanied by a decent user interface that tries to support
+the user instead of frustrating him/her.
+
+KFTPGrabber tries to make a complete FTP client solution with support for
+plugins, scripting and everything else the users needs, based on the
+latest technologies provided by KDE.
+
+Here are some of the features:
+
+  - Multiple FTP sessions (tabs) 
+  - Transfer queue 
+  - TLS/SSL support for encrypted connections (implicit and explicit)
+  - Partial X509 certificate support for authentication
+  - FXP transfer support (site-to-site) 
+  - OTP (one time password) support - S/Key, MD5, RMD160, SHA1 
+  - Drag&Drop support 
+  - Site bookmarking 
+  - Encrypted bookmark support (password can be saved to KWallet) 
+  - Distributed FTP support (PRET) 
+  - SSCN and CPSV support 
+  - Skiplist 
+  - ZeroConf (aka. Rendezvous) support for local site discovery 
+  - Bookmark sharing with Kopete contacts (KDE >= 3.3) 
+  - Bookmark import plugins 
+  - Support for SFTP protocol [experimental] 
+
+This file was last updated with relevance to KFTPGrabber 0.8.0
+
+
+--------------------------------------------------------------------------------
+ DEPENDENCIES
+==============
+
+Required:
+    * KDElibs 3.3
+      http://www.kde.org
+
+    * OpenSSL 0.9.7
+      http://www.openssl.org
+
+Please note: If you obtain these dependencies via a packaging system, you must
+also install the devel versions of these packages!
+
+
+--------------------------------------------------------------------------------
+ IMPORTANT INSTALL INSTRUCTIONS
+================================
+
+In order to compile and install KFTPGrabber on your system, type the following
+in the base directory of the KFTPGrabber distribution:
+
+
+                % ./configure --prefix=`kde-config --prefix`
+                % make
+                % make install
+
+
+Note: --enable-final is not supported.
+
+Packages for popular distributions are available at http://www.kftp.org/
+
+
+--------------------------------------------------------------------------------
+ CONTRIBUTING
+==============
+
+If you wish to contribute to KFTPGrabber, you should build it from SVN and
+contact the developers via e-mail or irc - the IRC channel is also a place
+where it's nice to be, since you can talk to other developers much easier.
+
+--------------------------------------------------------------------------------
+
+WWW : http://www.kftp.org/
+MAIL: kostko@unimatrix-one.org
+IRC : irc.freenode.net, #kftpgrabber
+
+--------------------------------------------------------------------------------
+

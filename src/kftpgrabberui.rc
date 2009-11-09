@@ -1,0 +1,22 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui version="2" name="kftpgrabber">
+  <MenuBar>
+    <Menu name="file">
+      <Action name="new_session" />
+      <Action name="quick_connect" />
+    </Menu>
+    <Menu name="bookmarks">
+      <Action name="edit_bookmarks" />
+      <Action name="zeroconf_sites" />
+      <Action name="kwallet_sites" />
+      <Separator />
+      <ActionList name="bookmarks_list" />
+    </Menu>
+  </MenuBar>
+  <ToolBar name="mainToolBar" noMerge="1" fullWidth="true">
+    <text>Main Toolbar</text>
+    <Action name="new_session" />
+    <Action name="quick_connect" />
+    <Action name="transfer_mode" />
+  </ToolBar>
+</kpartgui>

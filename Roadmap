@@ -1,0 +1,33 @@
+PRIORITY
+**********************************************************
+- Fix slow SSL data connections in the new engine. - Kostko
+
+VERSION 0.8
+**********************************************************
+- Keep alive (NOOP). - someone
+
+- Drag drop changing position in queue. After server as top item have been done. - anyone(tobias if no one does it first).
+
+- Tooltips. - Tobias/first come.
+
+- Auto save queue on folder complete. (unless someone disagrees with this idea - tobias). - anybody.
+
+- Handle bookmark file conflicts properly. - ???.
+
+- Documentation (should be docbook, see http://quality.kde.org/develop/howto/howtodocs.php) for [priority, view/edit, FXP speed, and what else tobias didn't comment] - tobias(well.. DOH).
+
+- Unify all the filtering options (highlighting, priority lists, ASCII extensions) by creating a filtering API. A Thunderbird-like filtering dialog should be used for user configuration.
+
+UNDECIDED:
+**********************************************************
+- Kicker applet showing threads, and speed.(unless someone disagrees with this idea - tobias)
+
+- Split queue/logs (or rather.. any two(+) of the tabs).
+
+- Bookmark directories on server.
+
+- Mirror enter directories with alt+dbl click.. if directory names are similar in both panes.
+
+- Open an ssh window to the connected window.. and automagicly log in (how?.. i'm not sure i see the need)
+
+- Reconnect and do cd after disconnect (on timeout).

@@ -1,0 +1,259 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>KFTPBookmarkImportLayout</class>
+  <widget class="Q3Wizard" name="KFTPBookmarkImportLayout" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>629</width>
+        <height>533</height>
+      </rect>
+    </property>
+    <property name="caption" >
+      <string>Bookmark Import Wizard</string>
+    </property>
+    <widget class="QWidget" name="Step1" >
+      <attribute name="title" >
+        <string>Step 1: &lt;b>Select Import Plugin&lt;/b></string>
+      </attribute>
+      <layout class="QGridLayout" >
+        <item row="0" column="0" >
+          <widget class="QLabel" name="m_wizardPixmap" >
+            <property name="minimumSize" >
+              <size>
+                <width>170</width>
+                <height>430</height>
+              </size>
+            </property>
+            <property name="text" >
+              <string>Image</string>
+            </property>
+            <property name="wordWrap" >
+              <bool>false</bool>
+            </property>
+          </widget>
+        </item>
+        <item row="0" column="1" >
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="QLabel" name="textLabel1" >
+                <property name="text" >
+                  <string>Please select the appropriate import plugin from the list below. Each plugin can import from one different format.</string>
+                </property>
+                <property name="alignment" >
+                  <set>Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap" >
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>21</width>
+                    <height>16</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>Minimum</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Vertical</enum>
+                </property>
+              </spacer>
+            </item>
+            <item>
+              <widget class="QLabel" name="textLabel2" >
+                <property name="text" >
+                  <string>Available import plugins:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="KListView" name="m_pluginList" >
+                <column>
+                  <property name="text" >
+                    <string>Name</string>
+                  </property>
+                  <property name="clickable" >
+                    <bool>true</bool>
+                  </property>
+                  <property name="resizable" >
+                    <bool>true</bool>
+                  </property>
+                </column>
+                <column>
+                  <property name="text" >
+                    <string>Description</string>
+                  </property>
+                  <property name="clickable" >
+                    <bool>true</bool>
+                  </property>
+                  <property name="resizable" >
+                    <bool>true</bool>
+                  </property>
+                </column>
+              </widget>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="Step2" >
+      <attribute name="title" >
+        <string>Step 2: &lt;b>Select Bookmark File to Import&lt;/b></string>
+      </attribute>
+      <layout class="QGridLayout" >
+        <item row="0" column="0" >
+          <widget class="QLabel" name="m_wizardPixmap_2" >
+            <property name="minimumSize" >
+              <size>
+                <width>170</width>
+                <height>430</height>
+              </size>
+            </property>
+            <property name="text" >
+              <string>Image</string>
+            </property>
+            <property name="wordWrap" >
+              <bool>false</bool>
+            </property>
+          </widget>
+        </item>
+        <item row="0" column="1" >
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="QLabel" name="textLabel3" >
+                <property name="text" >
+                  <string>Please select the bookmark file from which you would like to import your bookmarks. A default path has already been determined by the import plugin.</string>
+                </property>
+                <property name="alignment" >
+                  <set>Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap" >
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="textLabel4" >
+                <property name="text" >
+                  <string>&lt;b>Bookmark path:&lt;/b></string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="KURLRequester" name="m_importUrl" />
+            </item>
+            <item>
+              <spacer name="spacer1" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>31</width>
+                    <height>80</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Vertical</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="Step3" >
+      <attribute name="title" >
+        <string>Step 3: &lt;b>Importing Bookmarks...&lt;/b></string>
+      </attribute>
+      <layout class="QGridLayout" >
+        <item row="0" column="0" >
+          <widget class="QLabel" name="m_wizardPixmap_3" >
+            <property name="minimumSize" >
+              <size>
+                <width>170</width>
+                <height>430</height>
+              </size>
+            </property>
+            <property name="text" >
+              <string>Image</string>
+            </property>
+            <property name="wordWrap" >
+              <bool>false</bool>
+            </property>
+          </widget>
+        </item>
+        <item row="0" column="1" >
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="QLabel" name="textLabel1_2" >
+                <property name="text" >
+                  <string>Please wait while the bookmarks are being imported.</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="textLabel2_2" >
+                <property name="text" >
+                  <string>&lt;b>Import progress:&lt;/b></string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="KProgress" name="m_progressBar" />
+            </item>
+            <item>
+              <spacer name="spacer12" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>31</width>
+                    <height>241</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Vertical</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+  <customwidgets>
+    <customwidget>
+      <class>KListView</class>
+      <extends>Q3ListView</extends>
+    </customwidget>
+  </customwidgets>
+  <includes>
+    <include location="local" >kurlrequester.h</include>
+    <include location="local" >kpushbutton.h</include>
+    <include location="local" >kprogress.h</include>
+  </includes>
+</ui>

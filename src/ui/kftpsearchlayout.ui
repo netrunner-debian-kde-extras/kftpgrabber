@@ -1,0 +1,230 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>KFTPSearchLayout</class>
+  <widget class="QWidget" name="KFTPSearchLayout" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>550</width>
+        <height>409</height>
+      </rect>
+    </property>
+    <property name="minimumSize" >
+      <size>
+        <width>500</width>
+        <height>400</height>
+      </size>
+    </property>
+    <property name="windowTitle" >
+      <string>Queue Search &amp; Replace</string>
+    </property>
+    <layout class="QVBoxLayout" >
+      <property name="margin" >
+        <number>0</number>
+      </property>
+      <item>
+        <widget class="QLabel" name="textLabel1" >
+          <property name="text" >
+            <string>Using this dialog, you can do massive replacing of source/destination paths of the queued transfers. &lt;b>Changes cannot be undone.&lt;/b></string>
+          </property>
+          <property name="wordWrap" >
+            <bool>false</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="Q3GroupBox" name="groupBox3" >
+          <property name="title" >
+            <string>Search What</string>
+          </property>
+          <layout class="QGridLayout" >
+            <item row="1" column="0" >
+              <widget class="QLabel" name="textLabel3" >
+                <property name="text" >
+                  <string>Destination:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="0" >
+              <widget class="QLabel" name="textLabel2" >
+                <property name="text" >
+                  <string>Source:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item rowspan="1" row="2" column="0" colspan="2" >
+              <widget class="QCheckBox" name="searchServer" >
+                <property name="text" >
+                  <string>Search only for transfers on specific server</string>
+                </property>
+              </widget>
+            </item>
+            <item rowspan="1" row="3" column="0" colspan="2" >
+              <widget class="Q3GroupBox" name="groupBox1" >
+                <property name="enabled" >
+                  <bool>false</bool>
+                </property>
+                <property name="title" >
+                  <string>Server Info</string>
+                </property>
+                <layout class="QGridLayout" >
+                  <item row="0" column="0" >
+                    <widget class="QLabel" name="textLabel4_2" >
+                      <property name="text" >
+                        <string>Server name:</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="0" >
+                    <widget class="QLabel" name="textLabel5" >
+                      <property name="text" >
+                        <string>Host:</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="3" column="0" >
+                    <widget class="QLabel" name="textLabel7" >
+                      <property name="text" >
+                        <string>Password:</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="2" column="0" >
+                    <widget class="QLabel" name="textLabel6" >
+                      <property name="text" >
+                        <string>Username:</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item rowspan="1" row="0" column="1" colspan="3" >
+                    <widget class="KFTPServerLineEdit" name="searchServerName" />
+                  </item>
+                  <item row="1" column="1" >
+                    <widget class="KLineEdit" name="searchServerHost" />
+                  </item>
+                  <item rowspan="1" row="2" column="1" colspan="3" >
+                    <widget class="KLineEdit" name="searchServerUser" />
+                  </item>
+                  <item rowspan="1" row="3" column="1" colspan="3" >
+                    <widget class="KPasswordEdit" name="searchServerPass" />
+                  </item>
+                  <item row="1" column="2" >
+                    <widget class="QLabel" name="textLabel8" >
+                      <property name="text" >
+                        <string>Port:</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="3" >
+                    <widget class="QSpinBox" name="searchServerPort" >
+                      <property name="maximum" >
+                        <number>65535</number>
+                      </property>
+                      <property name="minimum" >
+                        <number>1</number>
+                      </property>
+                      <property name="value" >
+                        <number>21</number>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item row="0" column="1" >
+              <widget class="KLineEdit" name="searchSrcPath" />
+            </item>
+            <item row="1" column="1" >
+              <widget class="KLineEdit" name="searchDstPath" />
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="Q3GroupBox" name="groupBox3_2" >
+          <property name="title" >
+            <string>Replace With</string>
+          </property>
+          <layout class="QGridLayout" >
+            <item row="1" column="0" >
+              <widget class="QLabel" name="textLabel3_2" >
+                <property name="text" >
+                  <string>Destination:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="0" >
+              <widget class="QLabel" name="textLabel2_2" >
+                <property name="text" >
+                  <string>Source:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1" >
+              <widget class="KLineEdit" name="replaceSrcPath" />
+            </item>
+            <item row="1" column="1" >
+              <widget class="KLineEdit" name="replaceDstPath" />
+            </item>
+          </layout>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <customwidgets>
+    <customwidget>
+      <class>KFTPServerLineEdit</class>
+      <extends>QWidget</extends>
+      <header location="local" >widgets/kftpserverlineedit.h</header>
+      <sizehint>
+        <width>0</width>
+        <height>18</height>
+      </sizehint>
+      <container>0</container>
+      <sizepolicy>
+        <hordata>7</hordata>
+        <verdata>0</verdata>
+      </sizepolicy>
+      <pixmap>image0</pixmap>
+    </customwidget>
+  </customwidgets>
+  <images>
+    <image name="image0" >
+      <data format="XBM.GZ" length="79" >789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+  </images>
+  <includes>
+    <include location="local" >kpassdlg.h</include>
+  </includes>
+</ui>

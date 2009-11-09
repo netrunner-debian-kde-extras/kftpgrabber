@@ -1,0 +1,113 @@
+<commands>
+  <category name="GlFTPd">
+    <category name="Information">
+      <entry name="Show current aliases">
+        <description>Shows current user aliases.</description>
+        <command>SITE ALIAS</command>
+        <response handler="Raw" display="Window">
+          <expected code="2" />
+        </response>
+      </entry>
+      
+      <entry name="Show group info" icon="info">
+        <description>Shows group information.</description>
+        <command>SITE GRP %1</command>
+        <params>
+          <param type="String">Group name</param>
+        </params>
+        <response handler="Raw" display="Window">
+          <expected code="2" />
+        </response>
+      </entry>
+      
+      <entry name="Show your idle time">
+        <description>Shows your current idle time.</description>
+        <command>SITE IDLE</command>
+        <response handler="Raw" display="Window">
+          <expected code="2" />
+        </response>
+      </entry>
+      
+      <entry name="Show online users">
+        <description>Shows the users that are currently online.</description>
+        <command>SITE WHO</command>
+        <response handler="Raw" display="Window">
+          <expected code="2" />
+        </response>
+      </entry>
+      
+      <entry name="Show welcome screen">
+        <description>Shows the welcome screen.</description>
+        <command>SITE WELCOME</command>
+        <response handler="Raw" display="Window">
+          <expected code="2" />
+        </response>
+      </entry>
+      
+      <separator />
+      
+      <entry name="Set your idle time">
+        <description>Sets your maximum idle time (in seconds).</description>
+        <command>SITE IDLE %1</command>
+        <params>
+          <param type="Integer">Idle time</param>
+        </params>
+        <response handler="Substitute" display="MessageBox">
+          <expected code="2" />
+          <text>Idle time successfully changed.</text>
+        </response>
+      </entry>
+      
+      <entry name="Change your password" icon="password">
+        <description>Changes your account password.</description>
+        <command>SITE PASSWD %1</command>
+        <params>
+          <param type="Password">Password</param>
+        </params>
+        <response handler="Substitute" display="MessageBox">
+          <expected code="2" />
+          <text>Password successfully changed.</text>
+        </response>
+      </entry>
+    </category>
+    
+    <category name="User Management">
+      <entry name="Delete a user" icon="editdelete">
+        <description>Removes a user from the server's user database.</description>
+        <command>SITE DELUSER %1</command>
+        <params>
+          <param type="String">Username</param>
+        </params>
+        <response handler="Substitute" display="MessageBox">
+          <expected code="2" />
+          <text>User successfully removed.</text>
+        </response>
+      </entry>
+      
+      <entry name="Change user's password" icon="password">
+        <description>Changes a user's password.</description>
+        <command>SITE CHPASS %1 %2</command>
+        <params>
+          <param type="String">Username</param>
+          <param type="Password">New password</param>
+        </params>
+        <response handler="Substitute" display="MessageBox">
+          <expected code="2" />
+          <text>Password successfully changed.</text>
+        </response>
+      </entry>
+      
+      <entry name="Kick a user from this server">
+        <description>Terminates all connections for the specified user.</description>
+        <command>SITE KICK %1</command>
+        <params>
+          <param type="String">Username</param>
+        </params>
+        <response handler="Substitute" display="MessageBox">
+          <expected code="2" />
+          <text>User has been kicked.</text>
+        </response>
+      </entry>
+    </category>
+  </category>
+</commands>

@@ -1,0 +1,116 @@
+<ui version="4.0" >
+ <class>ConfigFilterLayout</class>
+ <widget class="QWidget" name="ConfigFilterLayout" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string></string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="leftMargin" >
+    <number>0</number>
+   </property>
+   <property name="topMargin" >
+    <number>0</number>
+   </property>
+   <property name="rightMargin" >
+    <number>0</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>0</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>ASCII E&amp;xtensions</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="1" column="1" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>212</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1" >
+        <layout class="QVBoxLayout" >
+         <item>
+          <widget class="KPushButton" name="addExtButton" >
+           <property name="text" >
+            <string>Add Extension</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="KPushButton" name="removeExtButton" >
+           <property name="text" >
+            <string>Remove</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item rowspan="2" row="0" column="0" >
+        <layout class="QVBoxLayout" >
+         <item>
+          <widget class="QLabel" name="textLabel1" >
+           <property name="text" >
+            <string>Extension:</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="KLineEdit" name="newExtension" />
+         </item>
+         <item>
+          <widget class="QListWidget" name="extensionList" />
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KPushButton</class>
+   <extends>QPushButton</extends>
+   <header>kpushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local" >kpushbutton.h</include>
+  <include location="local" >klineedit.h</include>
+  <include location="local" >k3listview.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>

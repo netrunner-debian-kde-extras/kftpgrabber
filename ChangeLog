@@ -1,0 +1,65 @@
+KFTPGrabber Changelog
+=====================
+(c) 2003-2005 the KFTPGrabber developers.
+
+VERSION 0.6.0
+  FIX: Resuming files using SFTP
+  FIX: Do not refetch directory listings while processing the queue
+  FIX: Queue/server management related crash
+  FIX: Incorrect directory progress when aborting transfer
+
+VERSION 0.6.0-beta2
+  FIX: Request for password when selecting anonymous in quick connect dialog
+  FIX: Set the correct home dir on some remote connections
+  FIX: Bookmark related crash
+  FIX: Proper encoding of URLs in the queue file
+  FIX: One month timeshift when doing MDTM
+
+VERSION 0.6.0-beta1
+  ADD: According to the KDE HIG minimize to tray if the mainwindow is closed
+  ADD: Experimental support for multiple threads
+  ADD: Traffic graph
+  ADD: Commonly used site commands for GlFTPD (more to follow)
+  ADD: Support for setting per-site encoding
+  CHG: Updated libssh to the latest version to support keyboard-interactive auth
+  CHG: Removed howl in favor of KDNSSD Zeroconf API
+  FIX: Lots of crash fixes
+  FIX: Rewritten directory listing parser
+  FIX: Different queue improvements and bugfixes
+
+VERSION 0.5.0
+  FIX: Behaviour of the "Show Tree View" button
+  FIX: Processing of queued transfers after aborting a transfer
+  FIX: Fix a progressbar related crash
+  FIX: Many bugfixes to the quickconnect dialog
+  FIX: Adjustment of licenses (thanks to Vince <vince@kerneled.org>)
+  FIX: Support for servers that send their local IP instead of the correct one
+  FIX: Upload of files >4GB
+  FIX: FreeBSD threading lib detection
+  ADD: README and Changelog
+
+VERSION 0.5.0-beta1
+  ADD: Experimental SFTP support
+  ADD: Support of implicit SSL connections
+  ADD: Support for setting the local directory
+  ADD: Setting the password for anonymous connections is now possible
+  ADD: Using transfermodes other than plain FTP is now possible from the
+       quick connect dialog
+  ADD: Bookmark sidebar
+  ADD: Zeroconf sidebar
+  ADD: Saving the mainwindow's position
+  ADD: Password dialog for Zeroconf connections
+  ADD: Plugin framework for import filters, currently featuring a gFTP
+       import filter (more to come)
+  ADD: Option for disabling the splash screen
+  ADD: Ability to configure the default behavior of overwrite/resume/rename
+       when files already exist in local and remote directories
+  CHG: Use of KMDI for the user interface
+  CHG: Reworked bookmark editor
+  FIX: Off by one for the date's month when uploading files
+  FIX: Reconnection delay can now be up to 9999 seconds
+  FIX: Detection of QSA and Howl in the configure script
+  FIX: ETA calculation
+  FIX: Lots of compile fixes and other bugfixes
+  REM: Global option for the remote directory. The one provided by the server 
+       is now used, if not being overridden by the bookmark setting

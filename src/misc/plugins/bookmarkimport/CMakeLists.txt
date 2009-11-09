@@ -1,0 +1,5 @@
+ADD_SUBDIRECTORY( gftp ) 
+ADD_SUBDIRECTORY( ncftp ) 
+ADD_SUBDIRECTORY( kftp ) 
+ADD_SUBDIRECTORY( filezilla3 ) 
+
