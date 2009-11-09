@@ -1,0 +1,11 @@
+--- kftpgrabber/src/misc/kftpgrabber.kcfg.orig	2006-11-09 11:09:47.000000000 +0100
++++ kftpgrabber/src/misc/kftpgrabber.kcfg	2007-07-02 17:30:06.000000000 +0200
+@@ -95,7 +95,7 @@
+     </entry>
+     
+     <entry name="defEncoding" type="String">
+-      <default>iso 8859-1</default>
++      <default>utf8</default>
+       <label>The default site encoding.</label>
+     </entry>
+     
