@@ -16,5 +16,9 @@ install/kftpgrabber::
 
 clean::
 	rm -f kftpgrabber.1
-	rm -f translations/*/messages/*.gmo
+	find . -depth -name "*moc*" -exec rm -rf {} \;
+	find . -depth -name cmake_install.cmake -exec rm -f {} \;
+	find . -depth -name CTestTestfile.cmake -exec rm -f {} \;
+	find . -depth -name CMakeFiles -exec rm -f {} \;
+	find . -depth -name Makefile -exec rm -f {} \;
 

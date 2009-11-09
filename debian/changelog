@@ -1,4 +1,4 @@
-kftpgrabber (0.8.99svn1044538-3) unstable; urgency=low
+kftpgrabber (0.8.99~svn1044538-1) unstable; urgency=low
 
   * New upstream version for KDE4. (Closes: #543012, #551329) 
 
