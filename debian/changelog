@@ -1,3 +1,9 @@
+kftpgrabber (0.8.99~svn1044538-2) unstable; urgency=low
+
+  * Forgot to update build dependencies.
+
+ -- Michael Meskes <meskes@debian.org>  Wed, 11 Nov 2009 15:17:39 +0100
+
 kftpgrabber (0.8.99~svn1044538-1) unstable; urgency=low
 
   * New upstream version for KDE4. (Closes: #543012, #551329) 
