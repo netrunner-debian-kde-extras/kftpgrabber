@@ -1,0 +1,2 @@
+debian/lintian/kftpgrabber	/usr/share/lintian/overrides
+kftpgrabber.1			/usr/share/man/man1

@@ -7,9 +7,5 @@ include /usr/share/cdbs/1/class/cmake.mk
 build/kftpgrabber::
 	/usr/bin/docbook2x-man debian/kftpgrabber.xml
 
-install/kftpgrabber::
-	install -D -p -m644 debian/kftpgrabber.lintian-overrides \
-	  debian/kftpgrabber/usr/share/lintian/overrides/kftpgrabber
-
 clean::
 	rm -f kftpgrabber.1
