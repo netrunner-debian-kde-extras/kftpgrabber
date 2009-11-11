@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Mark Purcell <msp@debian.org>, Michael Meskes <meskes@debian.org>
-Build-Depends: cdbs, debhelper (>= 5), kdelibs5-dev, libssh2-1-dev, docbook2x
+Build-Depends: cdbs, debhelper (>= 5), kdelibs5-dev, libssh2-1-dev, docbook2x, libssl-dev
 Standards-Version: 3.8.3
 Homepage: http://www.kftp.org
 Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/kftpgrabber.git
