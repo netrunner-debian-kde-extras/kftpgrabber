@@ -1,3 +1,10 @@
+kftpgrabber (0.8.99~svn1044538-3) UNRELEASED; urgency=low
+
+  [ Pino Toscano ]
+  * Add cmake build dependency, as it is no more provided by kdelibs5-dev.
+
+ -- Michael Meskes <meskes@debian.org>  Thu, 06 May 2010 00:19:49 +0200
+
 kftpgrabber (0.8.99~svn1044538-2) unstable; urgency=low
 
   * Forgot to update build dependencies.
