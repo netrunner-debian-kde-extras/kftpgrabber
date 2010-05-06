@@ -6,8 +6,9 @@ kftpgrabber (0.8.99~svn1044538-3) unstable; urgency=low
   [ Michael Meskes ]
   * Added source/format file.
   * Bumped Standards-Version to 3.8.4, no changes needed.
+  * Added special SSL exception in the source code to copyright file.
 
- -- Michael Meskes <meskes@debian.org>  Thu, 06 May 2010 10:15:32 +0200
+ -- Michael Meskes <meskes@debian.org>  Thu, 06 May 2010 10:29:27 +0200
 
 kftpgrabber (0.8.99~svn1044538-2) unstable; urgency=low
 
