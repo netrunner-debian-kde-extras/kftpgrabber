@@ -142,7 +142,7 @@ void TreeView::slotCreateSubcategory()
 
 void TreeView::slotRemove()
 {
-  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to remove this site or category ?")) != KMessageBox::Yes)
+  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to remove this site or category?")) != KMessageBox::Yes)
     return;
   
   Site *site = m_currentIndex.data(Model::SiteRole).value<Site*>();

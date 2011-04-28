@@ -39,15 +39,15 @@ directoryscanner.cpp
 kde4_add_executable(kftpgrabber ${kftpgrabber_SRCS})
 
 # bookmarkwidgets 
-target_link_libraries(kftpgrabber ${KDE4_KDECORE_LIBS} ${KDE4_KDNSSD_LIBRARY} ${KDE4_KDE3SUPPORT_LIBRARY} ${KDE4_KUTILS_LIBRARY} ${KDE4_KFILE_LIBRARY} ${LIBSSH2_LIBRARY})
-target_link_libraries(kftpgrabber ssl browser bookmarkwidgets queueviewwidget failedtransferswidget widgets engine misc customcommands ui kftpinterfaces)
+target_link_libraries(kftpgrabber ${KDE4_KPARTS_LIBS} ${KDE4_KDECORE_LIBS} ${KDE4_KDNSSD_LIBRARY} ${KDE4_KDE3SUPPORT_LIBRARY} ${KDE4_KUTILS_LIBRARY} ${KDE4_KFILE_LIBRARY} ${LIBSSH2_LIBRARY} )
+target_link_libraries(kftpgrabber browser bookmarkwidgets queueviewwidget failedtransferswidget widgets engine misc customcommands ui kftpinterfaces crypto)
 
 install(TARGETS kftpgrabber ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 
 ########### install files ###############
 
-install(FILES kftpgrabber.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+install(PROGRAMS kftpgrabber.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
 install(FILES kftpgrabberui.rc kftpgrabber-logo.png kftpgrabber-bi-wizard.png DESTINATION ${DATA_INSTALL_DIR}/kftpgrabber)
 
 kde4_install_icons( ${ICON_INSTALL_DIR} )
