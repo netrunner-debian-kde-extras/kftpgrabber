@@ -1,5 +1,5 @@
 [Desktop Entry]
-Type=ServiceType
+Type=Service
 X-KDE-ServiceType=KFTPGrabber/BookmarkImportPlugin
 Comment=A KFTPGrabber plugin for importing bookmarks
 Comment[bg]=Приставка за импортиране на отметки в KFTPGrabber
@@ -10,9 +10,12 @@ Comment[el]=Ένα πρόσθετο του  KFTPGrabber για την εισαγ
 Comment[en_GB]=A KFTPGrabber plugin for importing bookmarks
 Comment[es]=Un complemento de KFTPGrabber para importar marcadores
 Comment[et]=KFTPGrabberi järjehoidjate impordiplugin
-Comment[fr]=Un module externe de KFTPGrabber pour l'importation de signets
+Comment[fi]=KFTPGrabber-liitännäinen kirjanmerkkien tuontiin
+Comment[fr]=Un module externe KFTPGrabber pour l'importation de signets
 Comment[ga]=Breiseán KFTPGrabber le haghaidh iompórtála leabharmharcanna
 Comment[gl]=Unha extensión de FTPGrabber para importar favoritos
+Comment[is]=KFTPGrabber íforrit fyrir innflutning bókamerkja
+Comment[it]=Un'estensione per importare i segnalibri per KFTPGrabber
 Comment[ja]=ブックマークをインポートする KFTPGrabber プラグイン
 Comment[km]=កម្មវិធី​ជំនួយ KFTPGrabber ដើម្បី​នាំចូល​ចំណាំ
 Comment[lt]=KFTPGrabber įskiepis žymelių importavimui

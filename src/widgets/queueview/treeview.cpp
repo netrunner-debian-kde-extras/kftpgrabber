@@ -168,7 +168,7 @@ void TreeView::slotAbortTransfer()
 
 void TreeView::slotRemoveTransfer()
 {
-  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to remove this transfer ?"), i18n("Remove Transfer")) == KMessageBox::No)
+  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to remove this transfer?"), i18n("Remove Transfer")) == KMessageBox::No)
     return;
   
   QueueObject *object = m_currentIndex.data(Model::ObjectRole).value<QueueObject*>();
@@ -177,7 +177,7 @@ void TreeView::slotRemoveTransfer()
 
 void TreeView::slotRemoveAll()
 {
-  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to clear the transfer queue ?"), i18n("Clear Queue")) == KMessageBox::No)
+  if (KMessageBox::warningYesNo(this, i18n("Are you sure you wish to clear the transfer queue?"), i18n("Clear Queue")) == KMessageBox::No)
     return;
   
   Manager::self()->clearQueue();
