@@ -1,9 +1,10 @@
-kftpgrabber (0.8.99~svn1214766-1) UNRELEASED; urgency=low
+kftpgrabber (0.8.99~svn1214766-1) unstable; urgency=low
 
   * New Upstream version 0.8.99~svn1214766 (Closes: #610212)
   * Bumped Standards-Version to 3.9.2, no changes needed
+  * Updated lintian overrides for new version.
 
- -- Michael Meskes <meskes@debian.org>  Thu, 28 Apr 2011 15:36:51 +0200
+ -- Michael Meskes <meskes@debian.org>  Sun, 03 Jul 2011 12:31:30 +0200
 
 kftpgrabber (0.8.99~svn1044538-3) unstable; urgency=low
 

@@ -1,6 +1,6 @@
 # It isn't a library or a development package and no other packages uses libkftpinterfaces
 # kftpgrabber needs it and maybe a split can happen later if needed
-kftpgrabber: non-dev-pkg-with-shlib-symlink usr/lib/libkftpinterfaces.so.4.4.0 usr/lib/libkftpinterfaces.so
+kftpgrabber: non-dev-pkg-with-shlib-symlink usr/lib/libkftpinterfaces.so.4.6.0 usr/lib/libkftpinterfaces.so
 kftpgrabber: package-name-doesnt-match-sonames libkftpinterfaces4
-kftpgrabber: no-symbols-control-file usr/lib/libkftpinterfaces.so.4.4.0
+kftpgrabber: no-symbols-control-file usr/lib/libkftpinterfaces.so.4.6.0
 
